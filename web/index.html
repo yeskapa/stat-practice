@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>STAT mock test</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/styles.css?v=20261022-1">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="app" class="app-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <a id="app-title" class="app-title" href="/" aria-label="STAT mock test — return to available tests">STAT mock test</a>
+        <span id="save-status" class="save-status" role="status" aria-live="polite"></span>
+      </div>
+    </header>
+
+    <section id="exam-toolbar" class="exam-toolbar" aria-label="Test navigation" hidden>
+      <div class="toolbar-inner">
+        <nav id="question-nav" class="question-nav" aria-label="Questions"></nav>
+        <div class="timer-block">
+          <span class="timer-label">Time remaining</span>
+          <span id="timer" class="timer" role="timer" aria-live="off">02:00:00</span>
+        </div>
+      </div>
+    </section>
+
+    <main id="main-content" class="main-content" tabindex="-1">
+      <section id="loading-view" class="message-view" aria-live="polite">
+        <h1>Loading test</h1>
+        <p>Preparing the available papers.</p>
+      </section>
+
+      <section id="start-view" class="start-view" hidden>
+        <h1>Available mock tests</h1>
+        <p class="intro">Independent reasoning practice. Review your answers and timing after each test. Practice scores do not predict a STAT scaled score.</p>
+        <div id="test-list" class="test-list"></div>
+      </section>
+
+      <section id="exam-view" class="exam-view" hidden aria-labelledby="question-heading">
+        <h1 id="question-heading" class="sr-only" tabindex="-1">Question</h1>
+        <div class="exam-columns">
+          <article id="stimulus-region" class="stimulus-region" aria-labelledby="stimulus-heading">
+            <h2 id="stimulus-heading" class="sr-only">Question stimulus material</h2>
+            <p id="unit-question-count" class="unit-question-count"></p>
+            <div id="stimulus-content" class="source-content"></div>
+          </article>
+          <section id="question-region" class="question-region" aria-labelledby="visible-question-number">
+            <div id="unit-position" class="unit-position" hidden></div>
+            <div class="question-panel">
+              <div class="question-prompt">
+                <h2 id="visible-question-number" class="question-number sr-only"></h2>
+                <div id="prompt-content" class="source-content"></div>
+              </div>
+              <form id="answer-form">
+                <fieldset id="answer-fieldset">
+                  <legend class="sr-only">Select one option</legend>
+                  <div id="answer-options" class="answer-options"></div>
+                </fieldset>
+              </form>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="finish-view" class="finish-view" hidden aria-labelledby="finish-heading">
+        <h1 id="finish-heading" tabindex="-1">You have reached the end of the test.</h1>
+        <p>You are about to complete the test.</p>
+        <p id="answer-count" class="answer-count"></p>
+        <p>If you would like to go back to answer any questions you may have missed, or change a selected answer, please do so now.</p>
+        <p id="finish-submit-note">Completing the test saves your answers. Your answers cannot be changed afterwards.</p>
+      </section>
+
+      <section id="results-view" class="results-view" hidden aria-labelledby="results-heading">
+        <div class="results-header">
+          <div>
+            <h1 id="results-heading" tabindex="-1">Test results</h1>
+            <p id="results-test-title"></p>
+          </div>
+          <button id="review-questions" class="button button-forward" type="button">Review questions</button>
+        </div>
+        <div id="results-statistics"></div>
+      </section>
+
+      <section id="review-view" class="review-view" hidden aria-labelledby="review-heading">
+        <div class="review-header">
+          <div>
+            <h1 id="review-heading">Test review</h1>
+            <p id="review-summary" class="review-summary"></p>
+            <button id="view-statistics" class="button button-neutral" type="button">View statistics</button>
+          </div>
+          <div id="review-filters" class="review-filters" role="group" aria-label="Filter questions">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="wrong" aria-pressed="false">Wrong</button>
+            <button type="button" data-filter="unfair" aria-pressed="false">Unfair</button>
+            <button type="button" data-filter="slow" aria-pressed="false">Slow</button>
+            <button type="button" data-filter="skipped" aria-pressed="false">Skipped</button>
+          </div>
+        </div>
+        <label class="review-practice-toggle">
+          <input id="review-hide-answers" type="checkbox">
+          Hide my answers, correct answers, and notes for practice
+        </label>
+        <nav id="review-grid" class="review-grid" aria-label="Review questions"></nav>
+        <p id="filter-empty" class="filter-empty" hidden>No questions match this view.</p>
+        <div id="review-detail" class="review-detail">
+          <div class="exam-columns review-columns">
+            <article class="stimulus-region" aria-labelledby="review-stimulus-heading">
+              <h2 id="review-stimulus-heading" class="sr-only">Question stimulus material</h2>
+              <p id="review-unit-question-count" class="unit-question-count"></p>
+              <div id="review-stimulus" class="source-content"></div>
+            </article>
+            <section class="question-region" aria-labelledby="review-question-number">
+              <div class="question-panel review-question-panel">
+                <div class="question-prompt">
+                  <h2 id="review-question-number" class="question-number"></h2>
+                  <div id="review-prompt" class="source-content"></div>
+                </div>
+                <div id="review-options" class="review-options"></div>
+              </div>
+            </section>
+          </div>
+          <div class="review-facts" aria-label="Question metrics">
+            <p id="review-metrics"></p>
+            <p id="review-answer-line"></p>
+          </div>
+          <div class="note-field">
+            <label for="review-note">Your reasoning notes</label>
+            <textarea id="review-note" rows="5" placeholder="Record what you missed or want to remember."></textarea>
+            <span id="note-status" class="note-status" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="error-view" class="message-view" hidden role="alert">
+        <h1>Unable to load the test</h1>
+        <p id="error-message"></p>
+        <button id="retry-button" class="button button-neutral" type="button">Try again</button>
+      </section>
+    </main>
+
+    <footer id="exam-footer" class="exam-footer" hidden>
+      <div class="footer-inner">
+        <button id="back-button" class="button button-back" type="button">Back</button>
+        <button id="forward-button" class="button button-forward" type="button">Next</button>
+      </div>
+    </footer>
+  </div>
+  <script src="/statistics.js?v=20261022-1" defer></script>
+  <script src="/app.js?v=20261022-1" defer></script>
+</body>
+</html>

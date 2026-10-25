@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/
+artifacts/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+public-release/
+dist/
+tmp/
+reference/
+acer_MCQ_test_official/
+STAT-analysis-attachments/
+analysis-package-*/
+*.zip
+LOCAL_HISTORY.md
+# Existing source papers remain private until publication rights are cleared.
+content/tests/*
+!content/tests/system-check/

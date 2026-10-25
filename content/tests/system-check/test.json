@@ -1,0 +1,65 @@
+{
+  "id": "system-check",
+  "title": "Demo test",
+  "kind": "system-check",
+  "questionCount": 4,
+  "durationSeconds": 300,
+  "sourceDurationSeconds": 300,
+  "source": "Original interface verification questions",
+  "units": [
+    {
+      "id": "system-check-u01",
+      "title": "Interface check",
+      "stimulusHtml": "<h2>System-check instructions</h2><p>This short sitting uses the same timer, navigation, answer storage, submission, and review system as the full mock.</p><p>For a thorough check, answer Question 1 correctly, answer Question 2 incorrectly on purpose, leave Question 3 unanswered and return to it once, then complete Question 4.</p>",
+      "assets": [],
+      "sourcePages": [],
+      "questions": [
+        {
+          "id": "system-check-q001",
+          "originalNumber": 1,
+          "category": "verbal",
+          "promptHtml": "<p>Select the option whose text says <strong>Choice C</strong>.</p>",
+          "options": {"A": "Choice A", "B": "Choice B", "C": "Choice C", "D": "Choice D"},
+          "correctAnswer": "C",
+          "explanation": "Choice C is the requested option."
+        },
+        {
+          "id": "system-check-q002",
+          "originalNumber": 2,
+          "category": "verbal",
+          "promptHtml": "<p>Which control lets you jump directly to another question?</p>",
+          "options": {"A": "The page title", "B": "The numbered question navigation", "C": "The answer circle", "D": "The save message"},
+          "correctAnswer": "B",
+          "explanation": "The numbered navigation opens a selected question directly."
+        }
+      ]
+    },
+    {
+      "id": "system-check-u02",
+      "title": "Content check",
+      "stimulusHtml": "<h2>Practice activity</h2><table><thead><tr><th>Visit</th><th>Seconds</th></tr></thead><tbody><tr><td>First</td><td>5</td></tr><tr><td>Second</td><td>7</td></tr></tbody></table>",
+      "assets": [],
+      "sourcePages": [],
+      "questions": [
+        {
+          "id": "system-check-q003",
+          "originalNumber": 3,
+          "category": "quantitative",
+          "promptHtml": "<p>What is the longer visit time?</p>",
+          "options": {"A": "5 seconds", "B": "7 seconds", "C": "10 seconds", "D": "12 seconds"},
+          "correctAnswer": "B",
+          "explanation": "Seven seconds is longer than five seconds."
+        },
+        {
+          "id": "system-check-q004",
+          "originalNumber": 4,
+          "category": "quantitative",
+          "promptHtml": "<p>What is the total time across both visits?</p>",
+          "options": {"A": "2 seconds", "B": "7 seconds", "C": "12 seconds", "D": "35 seconds"},
+          "correctAnswer": "C",
+          "explanation": "5 + 7 = 12 seconds."
+        }
+      ]
+    }
+  ]
+}
