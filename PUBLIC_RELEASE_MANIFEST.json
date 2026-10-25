@@ -15,7 +15,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "6110ed93b64dfe0535cd05c67e1b59cc307c7acb9296da0274b975e8b5a766cb"
+      "sha256": "601932bc0fad4d2782215a807e0166936285f73f696b9ee8396c9908cb5e563d"
     },
     {
       "path": "LICENSE",
@@ -62,7 +62,7 @@
       "sha256": "c46eb710450f385b10640811ef9d8e3dc9446d3eaaa3138a72fdc487d7966639"
     },
     {
-      "path": "docs/assets/readme/exam.png",
+      "path": "docs/assets/readme/exam-fc381acbcb.png",
       "sha256": "fc381acbcb8d8c75606deaab208140a5bb819746be7ea53f272a4270a6678518"
     },
     {
@@ -111,7 +111,7 @@
     },
     {
       "path": "scripts/export_public.py",
-      "sha256": "a046bddbbda007804a06daae2ce0821f3ba7c214091466449d301335a126dc5e"
+      "sha256": "c6821d4d0aeb4cd089573648e601fc4b74de763a51863f99064b77055775a309"
     },
     {
       "path": "scripts/check_import.py",
@@ -135,7 +135,7 @@
     },
     {
       "path": "tests/test_public_export.py",
-      "sha256": "4548c314a18f64cd27ce1ebadc06e9f93e8b59427963eb95485aec25abe48171"
+      "sha256": "09fc9bb84943ccd7703c3fea874f13bee228b183e640e3957bb17c6ceab7cee5"
     },
     {
       "path": "tests/test_installation.py",

@@ -4,7 +4,7 @@ A free, local STAT practice app built to closely match the real exam interface a
 
 Open source and independent; not affiliated with ACER or an admissions authority.
 
-![Exam view with reading material, four answer choices, question navigation and countdown](docs/assets/readme/exam.png)
+![Exam view with reading material, four answer choices, question navigation and countdown](docs/assets/readme/exam-fc381acbcb.png)
 
 *Captured from a local GAT 2004 sitting. The public screenshot uses original sample question content in place of third-party material; the test interface is unchanged.*
 

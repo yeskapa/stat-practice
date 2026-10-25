@@ -70,7 +70,7 @@ def test_export_preserves_binary_screenshot_bytes(tmp_path):
         path = root / name
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(b"text\r\n")
-    screenshot = "docs/assets/readme/exam.png"
+    screenshot = "docs/assets/readme/exam-fc381acbcb.png"
     payload = b"\x89PNG\r\n\x1a\n\x00\xff\r\n"
     (root / screenshot).write_bytes(payload)
     output = tmp_path / "export"

@@ -18,7 +18,7 @@ PUBLIC_FILES = (
     "skills/import-mock/SKILL.md",
     "skills/import-mock/references/format.md",
     "skills/import-mock/references/conversion.md",
-    "docs/assets/readme/exam.png", "docs/assets/readme/statistics.png",
+    "docs/assets/readme/exam-fc381acbcb.png", "docs/assets/readme/statistics.png",
     "app.py", "db.py", "requirements.txt", "START_MOCK.cmd", "start.ps1",
     "web/index.html", "web/app.js", "web/styles.css", "web/statistics.js",
     "scripts/release_check.py", "scripts/export_public.py",
