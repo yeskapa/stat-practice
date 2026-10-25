@@ -69,7 +69,14 @@ a { color: #1758a8; }
   border: 0 !important;
 }
 
-.app-shell { min-height: 100vh; }
+.app-shell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header, .exam-toolbar, .exam-footer { flex-shrink: 0; }
 
 .site-header {
   min-height: 60px;
@@ -167,7 +174,7 @@ a { color: #1758a8; }
 .timer svg { width: 12px; height: 20px; }
 .timer svg.timer-colon { width: 4px; }
 
-.main-content { padding: 28px 16px; }
+.main-content { flex: 1 0 auto; padding: 28px 16px; }
 
 .exam-view { margin: 0 -8px; }
 

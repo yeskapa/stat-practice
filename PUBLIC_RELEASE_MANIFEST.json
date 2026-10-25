@@ -35,7 +35,7 @@
     },
     {
       "path": "VALIDATION.md",
-      "sha256": "f7e7acbea80f497f685e15d12c0cc18e6225d29448bffce2e64d5b0244a340d7"
+      "sha256": "08f00ee262e83415cffa5e80e57aba648a47c686e7a9d48a70edc5fad0261833"
     },
     {
       "path": "PRACTICE_SOURCES.md",
@@ -63,11 +63,11 @@
     },
     {
       "path": "docs/assets/readme/exam.png",
-      "sha256": "45480184dae085b47338aaeedcbc2120c2f71422b687dc4c898793494897833f"
+      "sha256": "fc381acbcb8d8c75606deaab208140a5bb819746be7ea53f272a4270a6678518"
     },
     {
       "path": "docs/assets/readme/statistics.png",
-      "sha256": "4ed8b5ee435e623f7ef42ca3259dc308c2826b6cddc0b2a693ea24a954ed5f2e"
+      "sha256": "73318210a476a8cef2b80005db0eeb71e317215aded61c4aa9fd0d957c803bf7"
     },
     {
       "path": "app.py",
@@ -99,7 +99,7 @@
     },
     {
       "path": "web/styles.css",
-      "sha256": "762301d9390be4b0a10dfda1fa2f395ca9334347858bbbaf6fcf63bf2993bf49"
+      "sha256": "b8829b6dfa94a6fbd46d422e79898a862e204340b1baa68e9ab1738e4bc601e6"
     },
     {
       "path": "web/statistics.js",
